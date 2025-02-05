@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show All Users</title>
+</head>
+<body>
+    <h1>All Users</h1>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user : ${users}">
+                <td th:text="${user.username}"></td>
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.email}"></td>
+                <td th:text="${user.role}"></td>
+                <td>
+                    <!-- Edit Form -->
+                    <form th:action="@{/admin/update-user}" method="post">
+					    <input type="hidden" name="id" th:value="${user.id}" />
+					    <input type="text" name="username" th:value="${user.username}" />
+					    <input type="text" name="name" th:value="${user.name}" />
+					    <input type="email" name="email" th:value="${user.email}" />
+					
+					    <!-- Dropdown for Role Selection -->
+					    <label for="role">Role:</label>
+					    <select name="role" id="role">
+					        <option th:value="'ROLE_ADMIN'" th:text="ROLE_ADMIN" th:selected="${user.role == 'ROLE_ADMIN'}">ROLE_ADMIN</option>
+					        <option th:value="'ROLE_USER'" th:text="ROLE_USER" th:selected="${user.role == 'ROLE_USER'}">ROLE_USER</option>
+					        <option th:value="'ROLE_GUEST'" th:text="ROLE_GUEST" th:selected="${user.role == 'ROLE_GUEST'}">ROLE_GUEST</option>
+					    </select>
+					
+					    <!-- Hidden password field -->
+					    <input type="hidden" name="password" th:value="${user.password}" />
+					    <button type="submit">Update</button>
+					</form>
+
+                    <!-- Delete Form -->
+                    <form th:action="@{/admin/delete-user}" method="post">
+                        <input type="hidden" name="id" th:value="${user.id}" />
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/admin">Back to Admin Home</a>
+</body>
+</html>

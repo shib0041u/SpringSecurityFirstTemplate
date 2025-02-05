@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dynamic Navbar and Footer</title>
+    <!-- Link to CSS for the navbar -->
+    <link rel="stylesheet" th:href="@{/css/nav.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <link rel="stylesheet" th:href="@{/css/footerTemplate.css}">
+</head>
+<body>
+    <!-- Include Navigation Bar -->
+    <div th:replace="global/nav :: nav-bar"></div>
+<!--     <div th:replace="global/home:: main-container"></div> -->
+
+    <!-- Main Content -->
+    <div class="maincontainer">
+    	<div "center-me">
+	        <h1 >This Is General Home page</h1>
+    	</div>
+    </div>
+
+    <!-- You can add Footer or other sections here as needed -->
+    <div th:replace="global/footerTemplate :: footer-bar"></div>
+</body>
+</html>

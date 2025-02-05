@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+.maincontainer{
+	min-height: 100vh;
+	background: rgb(0,0,0);
+	background: linear-gradient(147deg, rgba(0,0,0,1) 43%, rgba(95,8,8,1) 100%);
+	color:#ffffff;
+}
+.maincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*   height: 100vh; Full viewport height */
+}
+
+.center-me {
+  text-align: center;
+}

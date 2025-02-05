@@ -1,0 +1,292 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <div th:fragment="nav-bar">
+        <!-- Your Navbar content -->
+        <nav class="navMenu">
+  <div class="navSection menu">
+    <div class="navSection logo">
+      <a href="#">
+    <img th:src="@{/images/logo.png}" alt="logo">
+</a>
+    </div>
+    <div class="dropdown">
+      <content><a href="#">About <img class="down-arrow" th:src="@{/images/icons/down-arrow.png}" alt="logo"></a></content>
+      <div class="dropSection">
+        <div class="dropdown-content">
+          <div class="left-section">
+            <a class="innerRightItem" href="/home">
+              <div class="navMenu1">
+                <h4 class="hover-heading">
+                    <img class="icon-img" th:src="@{/images/icons/home.png}" alt="home">General Home</h4>
+              </div>
+              <p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="/user">
+              <div class="navMenu1">
+                <h4 class="hover-heading">
+                <img class="icon-img" th:src="@{/images/icons/user.png}" alt="user">User Home</h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="/admin">
+              <div class="navMenu1">
+                <h4 class="hover-heading">
+                <img class="icon-img" th:src="@{/images/icons/admin.png}" alt="admin">Admin Home</h4>
+                </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+          </div>
+         <div class="right-section">
+            <img th:src="@{/images/navRight/navright1.jpg}" alt="Nav Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <content><a href="#">Dropdown2 <img class="down-arrow" th:src="@{/images/icons/down-arrow.png}" alt="logo"> </a></content>
+      <div class="dropSection">
+        <div class="dropdown-content">
+          <div class="left-section">
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+          </div>
+          <div class="right-section">
+            <img th:src="@{/images/navRight/navright2.jpg}" alt="Nav Image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <content><a href="#">Dropdown3 <img class="down-arrow" th:src="@{/images/icons/down-arrow.png}" alt="logo"></a></content>
+      <div class="dropSection">
+        <div class="dropdown-content">
+          <div class="left-section">
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+            <a class="innerRightItem" href="#">
+              <div class="navMenu1">
+                <h4 class="hover-heading">                    
+                <img class="icon-img" th:src="@{/images/icons/notAdded.png}" alt="not added">Option
+                  </h4>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, praesentium? At totam unde est officiis.</p>
+            </a>
+          </div>
+          <div class="right-section">
+            <img th:src="@{/images/navRight/navright3.jpg}" alt="Nav Image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <content><a href="#">No Dropdown</a></content>
+    </div>
+    <div class="dropdown">
+      <content><a href="#">No DropDown</a></content>
+    </div>
+    <div class="dot"></div>
+  </div>
+
+  <div class="navSection ">
+<!--     <button class="navBtn"> -->
+<!--       <span>Get Started</span> -->
+<!--     </button> -->
+<!--   </div> -->
+<button class="button-82-pushable" role="button">
+  <span class="button-82-shadow"></span>
+  <span class="button-82-edge"></span>
+  <span class="button-82-front text">
+    Get Started
+  </span>
+</button>
+</nav>
+<div class="navPhone">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="navSection logo">
+    <a href="#"><img th:src="@{/images/logo.png}" alt="My Local Image"></a>
+  </div>
+  <div>
+    <button class="navBtn">
+      <span>Get Started</span>
+    </button>
+  </div>
+</div>
+
+<!-- Hamburger Menu Items -->
+<div class="menuPhone" id="menuPhone">
+  <div class="menu-item-Phone" onclick="toggleSubmenu('aboutPhone',this)">About <span class="iconDown">&#9660;</span>
+  </div>
+  <div class="submenuPhone" id="aboutPhone">
+    <a href="#">
+      <div class="submenu-item-Phone">The Company</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Business Model</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Competitive Analysis</div>
+    </a>
+  </div>
+  <div class="menu-item-Phone" onclick="toggleSubmenu('candidatePhone',this)">Candidate <span
+      class="iconDown">&#9660;</span></div>
+  <div class="submenuPhone" id="candidatePhone">
+    <a href="#">
+      <div class="submenu-item-Phone">Executive Career Path</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Career Development & Guidance</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Job Search & Recommendations</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Resume & Skills Eenhancement</div>
+    </a>
+
+  </div>
+  <div class="menu-item-Phone" onclick="toggleSubmenu('recruiterPhone',this)">Recruiter <span
+      class="iconDown">&#9660;</span></div>
+  <div class="submenuPhone" id="recruiterPhone">
+    <a href="#">
+      <div class="submenu-item-Phone">Candidate Pool</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Interview Assessment</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Onboarding Development</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Talent Management</div>
+    </a>
+  </div>
+  <a href="#">
+    <div class="menu-item-Phone" onclick="toggleSubmenu('pricingPhone')">Pricing</div>
+  </a>
+  <div class="menu-item-Phone" onclick="toggleSubmenu('supportPhone',this)">Support <span
+      class="iconDown">&#9660;</span></div>
+  <div class="submenuPhone" id="supportPhone">
+    <a href="#">
+      <div class="submenu-item-Phone">Connect With Us</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Blog</div>
+    </a>
+    <a href="#">
+      <div class="submenu-item-Phone">Frequently Asked Questions</div>
+    </a>
+  </div>
+</div>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menuPhone');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  }
+  var prev = null;
+  function toggleSubmenu(id, element) {
+    const submenu = document.getElementById(id);
+    const isHidden = submenu.style.display !== 'block';
+    const allSubmenus = document.querySelectorAll('.submenuPhone');
+    const allMenuItems = document.querySelectorAll('.menu-item-phone');
+    allSubmenus.forEach((sub) => sub.style.display = 'none');
+    allMenuItems.forEach((menuItem) => menuItem.classList.remove('active'));
+    if (isHidden) {
+      submenu.style.display = 'block';
+      element.classList.add('active');
+    } else {
+      submenu.style.display = 'none';
+      element.classList.remove('active');
+    }
+    if (prev) {
+      prev.classList.remove('active');
+    }
+    prev = element;
+  }
+  document.addEventListener('click', function(event) {
+	  const menu = document.getElementById('menuPhone');
+	  const hamburger = document.querySelector('.hamburger');
+	  if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+	    menu.style.display = 'none';
+	  }
+	});
+</script>
+<script>function adjustDropdownPosition() {
+    const firstSection = document.querySelector('.navMenu .navSection:first-child');
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+      const dropSection = dropdown.querySelector('.dropSection');
+      const firstSectionRect = firstSection.getBoundingClientRect();
+      const firstSectionLeft = firstSectionRect.left + window.scrollX;
+      dropSection.style.left = `${firstSectionLeft}px`;
+    });
+  }
+  window.addEventListener('load', adjustDropdownPosition);
+  window.addEventListener('resize', adjustDropdownPosition);
+</script>
+    </div>
+</body>
+</html>
